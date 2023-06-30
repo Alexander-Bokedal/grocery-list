@@ -1,24 +1,47 @@
-import React from 'react';
-import { NavLink, BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useState } from 'react';
 import Add from './Add';
 import List from './List';
 import Edit from './Edit';
 
 function Body() {
+  const [activeMenu, setActiveMenu] = useState('add');
+
+  const renderMenu = () => {
+    switch (activeMenu) {
+      case 'add':
+        return <Add />;
+      case 'list':
+        return <List />;
+      case 'edit':
+        return <Edit />;
+      default:
+        return null;
+    }
+  };
+
   return (
     <div>
       <nav className="navigation">
-        <NavLink className="menu" to="/add" activeClassName="active">Add</NavLink>
-        <NavLink className="menu" to="/list" activeClassName="active">List</NavLink>
-        <NavLink className="menu" to="/edit" activeClassName="active">Edit</NavLink>
+        <div
+          className={`menu ${activeMenu === 'add' ? 'active' : ''}`}
+          onClick={() => setActiveMenu('add')}
+        >
+          Add
+        </div>
+        <div
+          className={`menu ${activeMenu === 'list' ? 'active' : ''}`}
+          onClick={() => setActiveMenu('list')}
+        >
+          List
+        </div>
+        <div
+          className={`menu ${activeMenu === 'edit' ? 'active' : ''}`}
+          onClick={() => setActiveMenu('edit')}
+        >
+          Edit
+        </div>
       </nav>
-      <div className="content">
-        <Routes>
-          <Route path="/add" element={<Add />} />
-          <Route path="/list" element={<List />} />
-          <Route path="/edit" element={<Edit />} />
-        </Routes>
-      </div>
+      {renderMenu()}
     </div>
   );
 }

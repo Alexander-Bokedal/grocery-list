@@ -177,8 +177,7 @@ ul {
 }
 
 .hover-trigger:hover + .hover-content {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
   
   
 }

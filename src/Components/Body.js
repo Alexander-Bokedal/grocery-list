@@ -4,16 +4,18 @@ import List from './List';
 import Edit from './Edit';
 
 function Body() {
+  const [list, setList] = useState([]);
   const [activeMenu, setActiveMenu] = useState('add');
+  const [storeOrder, setStoreOrder] = useState([]);
 
   const renderMenu = () => {
     switch (activeMenu) {
       case 'add':
-        return <Add />;
+        return <Add onListChange={setList} />;
       case 'list':
-        return <List />;
+        return <List list={list} storeOrder={storeOrder}/>;
       case 'edit':
-        return <Edit />;
+        return <Edit orderList={setStoreOrder} />;
       default:
         return null;
     }

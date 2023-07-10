@@ -1,28 +1,32 @@
 import React, { useState } from 'react';
 import { AddButton, ClearButton } from './AddButtons';
-import List from './List';
-import ListContext from './ListContext';
 
-function Add() {
+function Add(props) {
+  const { onListChange } = props;
   const [textInput, setTextInput] = useState('');
-  const [list, setList] = useState([]);
 
   const handleInputChange = (e) => {
     setTextInput(e.target.value);
   };
 
   const handleAddClick = () => {
-    const newList = textInput.split('\n');
-    setList(newList);
+    const newList = textInput.split('\n').map(item => ({
+      name: item.toLowerCase().trim(),
+      id: Date.now,
+      sort: ''
+    }));
+    onListChange(newList);
+    
+    
 
     newList.forEach((item) => {
-      console.log('Add line:', item.toLowerCase().trim());
+      console.log('Add line:', item);
     });
   };
 
   const handleClearClick = () => {
     setTextInput('');
-    setList([]);
+    onListChange([]);
   };
 
   return (
@@ -38,11 +42,7 @@ function Add() {
       <div className='buttons'>
         <AddButton className="add-button green" onClick={handleAddClick}>Add</AddButton>
         <ClearButton className="add-button red" onClick={handleClearClick}>Clear</ClearButton>
-      </div>
-      <ListContext.Provider value={list}>
-       <List />
-      </ListContext.Provider>
-      
+      </div>     
     </div>
   );
 }

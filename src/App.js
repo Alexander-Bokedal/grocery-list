@@ -1,20 +1,15 @@
-
-import './index.css'; 
-import Body from './Components/Body';
-import { BrowserRouter } from 'react-router-dom';
 import React, { useState } from 'react';
-import Add from './Components/Add';
-import List from './Components/List';
-import Edit from './Components/Edit';
+import './index.css';
+import Body from './Components/Body';
+
 
 function App() {
+  const [activeMenu, setActiveMenu] = useState('add');
+
   return (
-   
     <div className='app'>
-      <Body />
-    
+      <Body setActiveMenu={setActiveMenu} activeMenu={activeMenu} />
     </div>
-   
   );
 }
 

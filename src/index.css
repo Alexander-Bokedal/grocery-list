@@ -8,6 +8,7 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  flex-direction: column;
 }
 
 .body {
@@ -17,6 +18,7 @@
   border: 3px solid black;
   border-top: 0px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -38,13 +40,15 @@
   font-weight: bold;
   
 }
-.menu:hover {
+.menu:hover,
+.navigation .menu.active,
+.menu.active {
   background-color: green;
   transition: background-color 0.3s ease;
 }
-.menu.active {
-  background-color: green;
-}
+
+
+
 
 a {
   text-decoration: none;
@@ -102,4 +106,79 @@ a:visited {
   height: 70%;
   font-size: 20px;
  
+}
+
+
+.list-box {
+  height: 600px;
+  width: 300px;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: left;
+  justify-content: start;
+  margin-bottom: 15px;
+}
+
+.edit {
+  width: 360px;
+  height: 80vh;
+  background-color: white;
+  border: 3px solid black;
+  border-top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  position: relative;
+ 
+}
+
+.edit h3 {
+  width: 48%; 
+  margin-bottom: 10px; 
+  
+}
+
+.edit ul {
+  width: calc(50% - 10px);
+ 
+}
+
+.edit h3 {
+  position: relative;
+}
+.edit h3:hover + ul {
+  
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding: 20px
+}
+
+.hover-content {
+  font-size: 20px;
+  font-weight: bold;
+  display: none;
+  position: absolute;
+  top: 5%;
+  left: 100%;
+  background-color: white;
+  border: 2px solid black;
+  
+}
+
+.hover-trigger {
+  position: relative;
+}
+
+.hover-trigger:hover + .hover-content {
+  display: flex;
+  flex-wrap: wrap;
+  
+  
 }

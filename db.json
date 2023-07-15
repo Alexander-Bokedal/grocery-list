@@ -1,19 +1,53 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  "order": [
+    { "name": "banan", "sort": "fruit" },
+    { "name": "sallad", "sort": "fruit" },
+    { "name": "tomat", "sort": "fruit" },
+    { "name": "babytomat", "sort": "fruit" },
+    { "name": "gurka", "sort": "fruit" },
+    { "name": "rödkål", "sort": "fruit" },
+    { "name": "isberg", "sort": "fruit" },
+    { "name": "rödlök", "sort": "fruit" },
+    { "name": "lök", "sort": "fruit" },
+    { "name": "vitlök", "sort": "fruit" },
+    { "name": "gullök", "sort": "fruit" },
+  
+    { "name": "mjölk", "sort": "dairy" },
+    { "name": "ägg", "sort": "dairy" },
+    { "name": "yoghurt", "sort": "dairy" },
+    { "name": "grädde", "sort": "dairy" },
+    { "name": "laktosfri grädde", "sort": "dairy" },
+    { "name": "matlagningsgrädde", "sort": "dairy" },
+ 
+    { "name": "bröd", "sort": "bread" },
+  
+    { "name": "ost", "sort": "cheese" },
+    { "name": "sås", "sort": "cheese" },
+  
+    { "name": "kyckling", "sort": "meat" },
+    { "name": "kebab", "sort": "meat" },
+  
+    { "name": "pasta", "sort": "dry" },
+    { "name": "kaffe", "sort": "dry" },
+    { "name": "havregryn", "sort": "dry" },
+ 
+    { "name": "cola", "sort": "drinks" },
+
+    { "name": "tvättmedel", "sort": "cleaning" },
+    { "name": "hushållspapper", "sort": "cleaning" },
+    { "name": "toapapper", "sort": "cleaning" },
+  
+    { "name": "lax", "sort": "frozen" },
+    { "name": "pyttipanna", "sort": "frozen" },
+    { "name": "hallon", "sort": "frozen" },
+  
+    { "name": "lindt", "sort": "candy" },
+    { "name": "mörk choklad", "sort": "candy" },
+  
+    { "name": "ersättning", "sort": "baby" },
+    { "name": "blöjor", "sort": "baby" },
+    { "name": "tvättlappar", "sort": "baby" },
+  
+    { "name": "bars", "sort": "misc" }
+  ]
 }

@@ -35,7 +35,7 @@ const store = [
   { name: 'vitlök', id: 32, sort: 'fruit' },
   { name: 'gullök', id: 33, sort: 'fruit' },
   { name: 'grädde', id: 34, sort: 'dairy' },
-  { name: 'laktofri grädde', id: 35, sort: 'dairy' },
+  { name: 'laktosfri grädde', id: 35, sort: 'dairy' },
   { name: 'matlagningsgrädde', id: 36, sort: 'dairy' },
   { name: 'tvättlappar', id: 37, sort: 'baby' },
   { name: 'mörk choklad', id: 38, sort: 'candy' },

@@ -78,6 +78,7 @@ function List(props) {
       <button className="add-button green" onClick={updateSortProperty}>
       Sort
     </button>
+  
    
     </div>
   );

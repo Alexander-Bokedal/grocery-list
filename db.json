@@ -1,53 +1,419 @@
 {
   "order": [
-    { "name": "banan", "sort": "fruit" },
-    { "name": "sallad", "sort": "fruit" },
-    { "name": "tomat", "sort": "fruit" },
-    { "name": "babytomat", "sort": "fruit" },
-    { "name": "gurka", "sort": "fruit" },
-    { "name": "rödkål", "sort": "fruit" },
-    { "name": "isberg", "sort": "fruit" },
-    { "name": "rödlök", "sort": "fruit" },
-    { "name": "lök", "sort": "fruit" },
-    { "name": "vitlök", "sort": "fruit" },
-    { "name": "gullök", "sort": "fruit" },
-  
-    { "name": "mjölk", "sort": "dairy" },
-    { "name": "ägg", "sort": "dairy" },
-    { "name": "yoghurt", "sort": "dairy" },
-    { "name": "grädde", "sort": "dairy" },
-    { "name": "laktosfri grädde", "sort": "dairy" },
-    { "name": "matlagningsgrädde", "sort": "dairy" },
- 
-    { "name": "bröd", "sort": "bread" },
-  
-    { "name": "ost", "sort": "cheese" },
-    { "name": "sås", "sort": "cheese" },
-  
-    { "name": "kyckling", "sort": "meat" },
-    { "name": "kebab", "sort": "meat" },
-  
-    { "name": "pasta", "sort": "dry" },
-    { "name": "kaffe", "sort": "dry" },
-    { "name": "havregryn", "sort": "dry" },
- 
-    { "name": "cola", "sort": "drinks" },
-
-    { "name": "tvättmedel", "sort": "cleaning" },
-    { "name": "hushållspapper", "sort": "cleaning" },
-    { "name": "toapapper", "sort": "cleaning" },
-  
-    { "name": "lax", "sort": "frozen" },
-    { "name": "pyttipanna", "sort": "frozen" },
-    { "name": "hallon", "sort": "frozen" },
-  
-    { "name": "lindt", "sort": "candy" },
-    { "name": "mörk choklad", "sort": "candy" },
-  
-    { "name": "ersättning", "sort": "baby" },
-    { "name": "blöjor", "sort": "baby" },
-    { "name": "tvättlappar", "sort": "baby" },
-  
-    { "name": "bars", "sort": "misc" }
+    {
+      "name": "kaffe",
+      "sort": "dry",
+      "id": 1
+    },
+    {
+      "name": "glass",
+      "sort": "frozen",
+      "id": 2
+    },
+    {
+      "name": "banan",
+      "sort": "fruit",
+      "id": 3
+    },
+    {
+      "name": "sallad",
+      "sort": "fruit",
+      "id": 4
+    },
+    {
+      "name": "tomat",
+      "sort": "fruit",
+      "id": 5
+    },
+    {
+      "name": "babytomat",
+      "sort": "fruit",
+      "id": 6
+    },
+    {
+      "name": "gurka",
+      "sort": "fruit",
+      "id": 7
+    },
+    {
+      "name": "rödkål",
+      "sort": "fruit",
+      "id": 8
+    },
+    {
+      "name": "isberg",
+      "sort": "fruit",
+      "id": 9
+    },
+    {
+      "name": "rödlök",
+      "sort": "fruit",
+      "id": 10
+    },
+    {
+      "name": "lök",
+      "sort": "fruit",
+      "id": 11
+    },
+    {
+      "name": "vitlök",
+      "sort": "fruit",
+      "id": 12
+    },
+    {
+      "name": "gullök",
+      "sort": "fruit",
+      "id": 13
+    },
+    {
+      "name": "mjölk",
+      "sort": "dairy",
+      "id": 14
+    },
+    {
+      "name": "ägg",
+      "sort": "dairy",
+      "id": 15
+    },
+    {
+      "name": "yoghurt",
+      "sort": "dairy",
+      "id": 16
+    },
+    {
+      "name": "grädde",
+      "sort": "dairy",
+      "id": 17
+    },
+    {
+      "name": "laktosfri grädde",
+      "sort": "dairy",
+      "id": 18
+    },
+    {
+      "name": "matlagningsgrädde",
+      "sort": "dairy",
+      "id": 19
+    },
+    {
+      "name": "bröd",
+      "sort": "bread",
+      "id": 20
+    },
+    {
+      "name": "ost",
+      "sort": "cheese",
+      "id": 21
+    },
+    {
+      "name": "sås",
+      "sort": "cheese",
+      "id": 22
+    },
+    {
+      "name": "kyckling",
+      "sort": "meat",
+      "id": 23
+    },
+    {
+      "name": "kebab",
+      "sort": "meat",
+      "id": 24
+    },
+    {
+      "name": "pasta",
+      "sort": "dry",
+      "id": 25
+    },
+    {
+      "name": "trocadero",
+      "sort": "drinks",
+      "id": 26
+    },
+    {
+      "name": "havregryn",
+      "sort": "dry",
+      "id": 27
+    },
+    {
+      "name": "cola",
+      "sort": "drinks",
+      "id": 28
+    },
+    {
+      "name": "tvättmedel",
+      "sort": "cleaning",
+      "id": 29
+    },
+    {
+      "name": "hushållspapper",
+      "sort": "cleaning",
+      "id": 30
+    },
+    {
+      "name": "toapapper",
+      "sort": "cleaning",
+      "id": 31
+    },
+    {
+      "name": "lax",
+      "sort": "frozen",
+      "id": 32
+    },
+    {
+      "name": "pyttipanna",
+      "sort": "frozen",
+      "id": 33
+    },
+    {
+      "name": "hallon",
+      "sort": "frozen",
+      "id": 34
+    },
+    {
+      "name": "lindt",
+      "sort": "candy",
+      "id": 35
+    },
+    {
+      "name": "mörk choklad",
+      "sort": "candy",
+      "id": 36
+    },
+    {
+      "name": "ersättning",
+      "sort": "baby",
+      "id": 37
+    },
+    {
+      "name": "blöjor",
+      "sort": "baby",
+      "id": 38
+    },
+    {
+      "name": "tvättlappar",
+      "sort": "baby",
+      "id": 39
+    },
+    {
+      "name": "bars",
+      "sort": "misc",
+      "id": 40
+    },
+    {
+      "name": "oliver",
+      "sort": "dry",
+      "id": 41
+    },
+    {
+      "name": "pytt",
+      "sort": "frozen",
+      "id": 42
+    },
+    {
+      "name": "pizza",
+      "sort": "frozen",
+      "id": 43
+    },
+    {
+      "name": "mango",
+      "sort": "frozen",
+      "id": 44
+    },
+    {
+      "name": "handtvål",
+      "sort": "misc",
+      "id": 45
+    },
+    {
+      "name": "cvitamin",
+      "sort": "misc",
+      "id": 46
+    },
+    {
+      "name": "c-vitamin",
+      "sort": "misc",
+      "id": 47
+    },
+    {
+      "name": "knäckebröd",
+      "sort": "bread",
+      "id": 48
+    },
+    {
+      "name": "salladslök",
+      "sort": "fruit",
+      "id": 49
+    },
+    {
+      "name": "citron",
+      "sort": "fruit",
+      "id": 50
+    },
+    {
+      "name": "kiwi",
+      "sort": "fruit",
+      "id": 51
+    },
+    {
+      "name": "lime",
+      "sort": "fruit",
+      "id": 52
+    },
+    {
+      "name": "nötfärs",
+      "sort": "meat",
+      "id": 53
+    },
+    {
+      "name": "skal",
+      "sort": "dry",
+      "id": 54
+    },
+    {
+      "name": "tomatpure",
+      "sort": "dry",
+      "id": 55
+    },
+    {
+      "name": "tapenad",
+      "sort": "dry",
+      "id": 56
+    },
+    {
+      "name": "tapenad",
+      "sort": "dry",
+      "id": 57
+    },
+    {
+      "name": "kokosolja",
+      "sort": "dry",
+      "id": 58
+    },
+    {
+      "name": "majonäs",
+      "sort": "dry",
+      "id": 59
+    },
+    {
+      "name": "olivolja",
+      "sort": "dry",
+      "id": 60
+    },
+    {
+      "name": "kimchi",
+      "sort": "dry",
+      "id": 61
+    },
+    {
+      "name": "palsternacka",
+      "sort": "fruit",
+      "id": 62
+    },
+    {
+      "name": "bostongurka",
+      "sort": "dry",
+      "id": 63
+    },
+    {
+      "name": "gurkmeja",
+      "sort": "fruit",
+      "id": 64
+    },
+    {
+      "name": "juice",
+      "sort": "dairy",
+      "id": 65
+    },
+    {
+      "name": "äpple",
+      "sort": "fruit",
+      "id": 66
+    },
+    {
+      "name": "päron",
+      "sort": "fruit",
+      "id": 67
+    },
+    {
+      "name": "apelsin",
+      "sort": "fruit",
+      "id": 68
+    },
+    {
+      "name": "kokbanan",
+      "sort": "fruit",
+      "id": 69
+    },
+    {
+      "name": "salladspåse",
+      "sort": "fruit",
+      "id": 70
+    },
+    {
+      "name": "salladpåse",
+      "sort": "fruit",
+      "id": 71
+    },
+    {
+      "name": "falukorv",
+      "sort": "meat",
+      "id": 72
+    },
+    {
+      "name": "minutkyckling",
+      "sort": "meat",
+      "id": 73
+    },
+    {
+      "name": "oxfilé",
+      "sort": "meat",
+      "id": 74
+    },
+    {
+      "name": "fläskfile",
+      "sort": "meat",
+      "id": 75
+    },
+    {
+      "name": "rostbiff",
+      "sort": "meat",
+      "id": 76
+    },
+    {
+      "name": "manchego",
+      "sort": "cheese",
+      "id": 77
+    },
+    {
+      "name": "kycklingspett",
+      "sort": "meat",
+      "id": 78
+    },
+    {
+      "name": "korv",
+      "sort": "meat",
+      "id": 79
+    },
+    {
+      "name": "fil",
+      "sort": "dairy",
+      "id": 80
+    },
+    {
+      "name": "batteri",
+      "sort": "misc",
+      "id": 81
+    },
+    {
+      "name": "schampo",
+      "sort": "misc",
+      "id": 82
+    },
+    {
+      "name": "body lotion",
+      "sort": "misc",
+      "id": 83
+    }
   ]
 }

@@ -71,19 +71,15 @@ const store = [
   { name: '', id: 68, sort: '' },
   { name: '', id: 69, sort: '' },
   { name: '', id: 70, sort: '' },
-  
-  
+  ];
 
-  
-];
-
-function Edit(props) {
-  const { orderList } = props;
+function Edit() {
+ 
 
   const logList = () => {
     console.log(store);
   };
-  orderList(store);
+ 
 
   return (
     <div className="edit">
